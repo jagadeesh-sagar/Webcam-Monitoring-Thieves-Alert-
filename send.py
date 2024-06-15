@@ -7,8 +7,8 @@ SENDER=os.getenv("Gmail")     # Gmail address
 RECIEVER=os.getenv("Gmail")
 def send_email(image_path):
     email_message=EmailMessage()
-    email_message["Subject"]="web cam checking"
-    email_message.set_content("is it doing well i think so")
+    email_message["Subject"]="webcam alert"
+    email_message.set_content("Somebody has entered into your property")
 
     with open(image_path,"rb") as file:
         content=file.read()
